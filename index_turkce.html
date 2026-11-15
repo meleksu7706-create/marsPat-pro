@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MarsPath Pro — Mars'ta güvenli keşif için akıllı navigasyon ve karar destek sistemi.">
+<title>MarsPath Pro | Mars Navigasyon Karar Desteği</title>
+<style>
+:root{--bg:#10151d;--panel:#192331;--text:#f4f6f8;--muted:#b9c3cf;--accent:#ff8b55;--line:#334253}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:16px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.08em;color:#ffad83}nav{display:flex;gap:18px;flex-wrap:wrap}a{color:#ffc09e;text-decoration:none}a:hover{text-decoration:underline}
+.hero{padding:86px 7% 76px;background:radial-gradient(ellipse at 80% 10%,#653b2e 0,transparent 38%),linear-gradient(135deg,#172331,#10151d)}
+.kicker{color:#ffad83;text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;font-weight:700}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.05;max-width:850px;margin:16px 0}
+.hero p{max-width:720px;color:var(--muted);font-size:1.15rem}
+.btn{display:inline-block;background:var(--accent);color:#1b1b1b;padding:12px 20px;border-radius:9px;font-weight:750;margin:12px 10px 0 0}
+section{padding:58px 7%;max-width:1250px;margin:auto}h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:0 0 16px}
+.lead{color:var(--muted);max-width:850px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:25px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin:0 0 8px;color:#ffc09e}.card p{margin:0;color:var(--muted)}
+.number{font-size:1.8rem;font-weight:850;color:var(--accent)}
+.steps{counter-reset:step}.steps .card{position:relative}
+.status{display:inline-block;padding:4px 10px;border-radius:30px;font-weight:700;font-size:.85rem;margin-bottom:8px}
+.green{background:#1d593f;color:#a7f2c8}.yellow{background:#66511e;color:#ffe39b}.red{background:#652d32;color:#ffc0c5}
+.pdfbox{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+footer{padding:30px 7%;border-top:1px solid var(--line);color:var(--muted);text-align:center}
+@media(max-width:600px){header{align-items:flex-start}.hero{padding-top:58px}nav{gap:12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">MARSPATH PRO</div>
+  <nav aria-label="Ana menü">
+    <a href="#proje">Proje</a><a href="#avantajlar">Avantajlar</a><a href="#guvenlik">Güvenlik</a><a href="#belge">Sunum PDF</a>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <div class="kicker">Mars navigasyon karar desteği</div>
+    <h1>Mars'ta güvenli keşif için akıllı yol arkadaşı.</h1>
+    <p>MarsPath Pro; astronotların konum, çevre ve görev verilerini bir araya getirerek güvenli rotalar belirlemeyi ve tehlikeler karşısında doğru kararları desteklemeyi amaçlayan bütünleşik bir navigasyon sistemidir.</p>
+    <a class="btn" href="#proje">Projeyi keşfet</a>
+    <a class="btn" href="Mars-yuruyuslerinde-guvenli-kesif-icin-entegre-sistem.pdf" target="_blank" rel="noopener">PDF sunumunu aç</a>
+  </div>
+
+  <section id="proje">
+    <h2>Proje hakkında</h2>
+    <p class="lead">Mars'ta Dünya ile iletişim gecikmeleri, toz fırtınaları, aşırı sıcaklık değişimleri ve bilinmeyen arazi koşulları astronotların karar vermesini zorlaştırır. MarsPath Pro, uydu görüntülerini, topografik bilgileri ve geçmiş bilimsel görev verilerini tek bir arayüzde birleştirerek bu zorlukların yönetilmesine yardımcı olur.</p>
+    <div class="grid">
+      <article class="card"><div class="number">01</div><h3>Uydu görüntüleri</h3><p>Mars yüzeyini ve geçilebilir alanları değerlendirmeye yardımcı olur.</p></article>
+      <article class="card"><div class="number">02</div><h3>Topografik veriler</h3><p>Eğimleri, kayaları ve kraterleri dikkate alarak rota değerlendirmesi sağlar.</p></article>
+      <article class="card"><div class="number">03</div><h3>Bilimsel veriler</h3><p>Geçmiş görev ölçümlerini ve bilimsel açıdan önemli bölgeleri haritada birleştirir.</p></article>
+    </div>
+  </section>
+
+  <section id="avantajlar">
+    <h2>Öne çıkan avantajlar</h2>
+    <div class="grid">
+      <article class="card"><h3>Güvenli rota</h3><p>Arazi koşullarını dikkate alarak astronotlar için daha güvenli yürüyüş rotaları önerir.</p></article>
+      <article class="card"><h3>Bilimsel keşif</h3><p>Eski buz rezervleri ve değerli mineral alanları gibi araştırma hedeflerini işaretler.</p></article>
+      <article class="card"><h3>Dinamik yeniden rotalama</h3><p>Yeni bir tehlike belirdiğinde alternatif bir rota önerilmesini destekler.</p></article>
+    </div>
+  </section>
+
+  <section id="guvenlik">
+    <h2>Güvenlik ve acil durum yaklaşımı</h2>
+    <p class="lead">Sistem, astronotların durumunu ve çevresel riskleri değerlendirerek üç seviyeli bir uyarı yaklaşımı kullanır.</p>
+    <div class="grid">
+      <article class="card"><span class="status green">Yeşil · Normal</span><h3>Rotaya devam</h3><p>Yaşam desteği, bağlantı ve yön bilgileri beklenen aralıktadır.</p></article>
+      <article class="card"><span class="status yellow">Sarı · Dikkat</span><h3>Temponu azalt</h3><p>Oksijen, batarya, sıcaklık veya bağlantı koşullarında bozulma görülür.</p></article>
+      <article class="card"><span class="status red">Kırmızı · Kritik</span><h3>Görevi durdur</h3><p>Ciddi riskte görev durdurulur ve güvenli bir sığınağa geçiş önerilir.</p></article>
+    </div>
+  </section>
+
+  <section id="belge">
+    <h2>Proje sunumu</h2>
+    <div class="pdfbox">
+      <p class="lead">MarsPath Pro projesinin ayrıntılı sunum dosyasını buradan açabilirsiniz.</p>
+      <a class="btn" href="Mars-yuruyuslerinde-guvenli-kesif-icin-entegre-sistem.pdf" target="_blank" rel="noopener">PDF dosyasını görüntüle</a>
+      <p style="color:var(--muted);font-size:.9rem">Not: Bu web sayfası, paylaşılan proje PDF'sine dayalı bir tanıtım sayfasıdır.</p>
+    </div>
+  </section>
+</main>
+<footer>© MarsPath Pro · Mars'ta güvenli keşif için bütünleşik navigasyon fikri</footer>
+</body>
+</html>
